@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Mentorship Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <nav>
+    <h2>🎓 Alumni Mentorship Platform</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#mentors">Mentors</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>Find Your Alumni Mentor</h1>
+
+<p>Connect with experienced alumni and grow your career.</p>
+
+<div style="text-align:center; margin:20px;">
+    <input
+        type="text"
+        id="search"
+        placeholder="Search by domain..."
+        onkeyup="searchMentor()"
+        style="padding:10px; width:300px; border-radius:6px; border:1px solid #ccc;">
+</div>
+
+
+
+<div class="container" id = "mentors">
+
+    <div class="card mentor">
+        <img src="images/kai-azer-506410614-normal.jpg" alt="Rahul Sharma">
+        <h2>Rahul Sharma</h2>   
+        <p><strong>Experience:</strong> 8 Years</p>
+        <p>Senior Software Engineer at Google.</p>
+        <button onclick="window.location.href='profile.html?name=Rahul Sharma'">
+View Profile
+</button>
+        <button onclick="requestMentorship('Rahul Sharma')">Request Mentorship</button>
+    </div>
+
+    <div class="card mentor">
+        <img src="images/images.jpeg" alt="Priya Mehta">
+        <h2>Priya Mehta</h2>    
+        <p><strong>Experience:</strong> 6 Years</p>
+        <p>Machine Learning Specialist.</p>
+        <button onclick="window.location.href='profile.html?name=Priya Mehta'">
+View Profile
+</button>
+        <button onclick="requestMentorship('Priya Mehta')">Request Mentorship</button>
+    </div>
+
+    <div class="card mentor">
+        <img src="images/b1892e503e33ec4a37cc2abc15278c72.jpg" alt="Aman Verma">
+        <h2>Aman Verma</h2> 
+        <p><strong>Experience:</strong> 10 Years</p>
+        <p>Ethical Hacker & Security Consultant.</p>
+      <button onclick="window.location.href='profile.html?name=Aman Verma'">
+View Profile
+</button>
+        <button onclick="requestMentorship('Aman Verma')">Request Mentorship</button>
+    </div>
+
+</div>
+<section id="about" style="padding:40px; text-align:center;">
+    <h2>About</h2>
+    <p>
+        The Alumni Mentorship Platform helps students connect with experienced
+        alumni for career guidance, skill development, and networking.
+    </p>
+</section>
+<section id="contact" style="padding:40px; text-align:center;">
+    <h2>Contact</h2>
+    <p>Email: alumni@college.edu</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+
+<script src="script.js"></script>
+<footer style="background:#0077cc; color:white; text-align:center; padding:15px; margin-top:30px;">
+    © 2026 Alumni Mentorship Platform | Made by Teena
+</footer>
+</body>
+</html>

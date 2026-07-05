@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentor Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="profile-card">
+    <h1 id="name"></h1>
+    <p id="info"></p>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("name").innerText = params.get("name");
+    document.getElementById("info").innerText = "Mentor profile page";
+</script>
+
+</body>
+</html>
